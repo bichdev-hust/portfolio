@@ -1,0 +1,152 @@
+#portfolio {
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .nav .nav-link {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+
+  .active {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .portfolioContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+
+    figure {
+      position: relative;
+      margin-bottom: 0;
+      cursor: pointer;
+      overflow: hidden;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(0,0,0,0.3);
+        transition: all 0.5s ease;
+      }
+
+      a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+
+      figcaption {
+        position: absolute;
+        right: 100%;
+        bottom: 20px;
+        color: #000;
+        background-color: #fff;
+        padding: 5px 20px;
+        // transform: translateX(-100%);
+        transition: all 0.5s ease;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        a {
+          opacity: 1;
+        }
+
+        figcaption {
+          transform: translateX(100%);
+        }
+      }
+    }
+
+    .hide-port {
+      display: none;
+    }
+  }
+
+  #detailPortfolio {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1031;
+
+    & > span {
+      color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      display: block;
+      padding: 0.5rem 1rem;
+      // background-color: red;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .close {
+      top: 0;
+      right: 0;
+    }
+
+    .fas {
+      font-size: 2.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .prev {
+      left: 1.5rem;
+    }
+
+    .next {
+      right: 1.5rem;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.3rem;
+        color: #fff;
+      }
+
+      &__name {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      &__number {
+        font-size: 0.8rem;
+        align-self: center;
+      }
+    }
+  }
+}

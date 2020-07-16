@@ -1,0 +1,42 @@
+
+
+#contact {
+  margin-bottom: 100px;
+
+  .map {
+    text-align: center;
+
+    iframe {
+      max-width: 100%;
+    }
+  }
+
+  .get-in-touch {
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .contact__card {
+    margin-top: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 11px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    i {
+      display: block;
+      padding: 40px;
+      margin-top: 25px;
+      // background-color: red;
+      border: 1px solid red;
+      border-radius: 50%;
+    }
+
+    address {
+      text-align: center;
+    }
+  }
+}

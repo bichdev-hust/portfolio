@@ -1,0 +1,71 @@
+$red: rgb(235, 83, 83);
+
+#home {
+  height: 100vh;
+  background: {
+    image: url(../images/background-home.jpg);
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+    attachment: fixed;
+  }
+
+  .container-xl {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+    font-family: 'Sriracha', cursive;
+    position: relative;
+
+    h1 {
+      font-size: 80px;
+      
+      span {
+        font-weight: 800;
+        color: $red;
+      }
+    }
+
+    h3 {
+      margin-top: 30px;
+      font-size: 35px;
+    }
+
+    a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      padding-top: 2px;
+      background-color: $red;
+      color: #fff;
+      font-size: 25px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      // transition: all 1000ms;
+      animation: {
+        name: anim-scroll-down;
+        duration: 2s;
+        delay: 1s;
+        iteration-count: infinite;
+      }
+    }
+  }
+}
+
+@keyframes anim-scroll-down {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 10px;
+    opacity: 0.1;
+  }
+}

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <noscript>You need to enabled javascript!!!</noscript>
+
+    <div class="container-fluid p-0 header-nav fixed-top">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a href="#" class="navbar-brand">SnowBigg</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link"><span>Portfolio</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link"><span>Blog</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- <div id="change-color">
+      <span class="fas fa-cog"></span>
+      <div class="color">
+        <div class="color--red"></div>
+        <div class="color--blue"></div>
+        <div class="color--green"></div>
+        <div class="color--orange"></div>
+        <div class="color--pink"></div>
+        <div class="color--purple"></div>
+        <div class="color-brown"></div>
+        <div class="color--aqua"></div>
+      </div>
+    </div> -->
+
+    <div class="container-fluid" id="home">
+      <div class="container-xl">
+        <h1>
+          Hello, I'm
+          <br />
+          <span>Duong Ngoc Bich</span>
+        </h1>
+        <h3>A Web Developer</h3>
+
+        <a href="#about"><span class="fas fa-angle-down"></span></a>
+      </div>
+    </div>
+
+    <div class="container-xl" id="about">
+      <h2>About Me</h2>
+      <div class="row">
+        <div class="col-md-4 pr-5">
+          <div class="img-personal">
+            <img src="./images/my-img.jpg" alt="" />
+            <div class="overlay-img"></div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h3>Hello, My name is Duong Ngoc Bich</h3>
+          <h6 class="mb-4 mt-2">I'm Web Developer</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            aliquam iure rerum sapiente debitis natus fugit numquam corporis
+            laborum officiis quae inventore quisquam quia molestiae, dicta quis
+            itaque tempora sequi. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptate obcaecati consequuntur fugit omnis.
+            Ipsam quod officiis numquam, quae eaque ullam impedit mollitia dolor
+            libero a iste vitae suscipit quidem quibusdam!
+          </p>
+
+          <div class="about-me-skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Jquery</span>
+            <span>Git</span>
+          </div>
+
+          <div class="about-me-short-wrap clearfix">
+            <ul>
+              <li>
+                <i class="fas fa-birthday-cake"></i
+                ><span><label>Birthday:</label>09/07/1994</span>
+              </li>
+              <li>
+                <i class="fas fa-calendar-alt"></i
+                ><span><label>Age:</label>26</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i
+                ><span><label>Address:</label>My Dinh 2, Ha Noi</span>
+              </li>
+              <li>
+                <i class="fab fa-gratipay"></i
+                ><span><label>Interests:</label>Watch Film, Reading, Game</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i
+                ><label>Email:</label>duongbich.dev94@gmail.com
+              </li>
+              <li>
+                <i class="fas fa-phone"></i><label>Phone</label>0364 915 522
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-btn">
+            <a href="#" class="btn btn-default">
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4>EXPERIENCE</h4>
+        </div>
+
+        <div class="col-md-6">
+          <h4>EDUCATION</h4>
+        </div>
+      </div>
+
+      <div class="detail-skills">
+        <h4>SKILLS</h4>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="skills-text">
+              <span class="language-name">HTMl</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="skills-text">
+              <span class="language-name">CSS</span>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="skills-text">
+              <span class="language-name">JavaScript</span>
+              <span class="skill-percent">55%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 55%;"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="skills-text">
+              <span class="language-name">Java</span>
+              <span class="skill-percent">20%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 20%;"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="skills-text">
+              <span class="language-name">Photoshop</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 65%;"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="skills-text">
+              <span class="language-name">Git</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xl" id="portfolio">
+      <h2>Portfolio</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        quos!
+      </p>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active">Show All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Branding</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Photography</a>
+        </li>
+      </ul>
+
+      <div class="portfolioContainer">
+        <figure class="design brand">
+          <img src="images/2048.webp" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>2048</figcaption>
+        </figure>
+        <figure class="design">
+          <img src="images/sodoku.webp" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>Sodoku</figcaption>
+        </figure>
+        <figure class="brand">
+          <img src="images/eat.jpg" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>Hot Pot</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/dulich.jpg" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>The Trips</figcaption>
+        </figure>
+        <figure class="photo brand">
+          <img src="images/eat.jpg" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>Hot Pot</figcaption>
+        </figure>
+        <figure class="design">
+          <img src="images/dulich.jpg" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>The Trips</figcaption>
+        </figure>
+        <figure>
+          <img src="images/2048.webp" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>2048</figcaption>
+        </figure>
+        <figure>
+          <img src="images/eat.jpg" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>Hot Pot</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dulich.jpg" alt="" />
+          <div class="overlay"></div>
+          <a href="#"><span class="fas fa-search"></span></a>
+          <figcaption>The Trips</figcaption>
+        </figure>
+      </div>
+
+      <div id="detailPortfolio">
+        <span class="close" title="Close">&times;</span>
+        <div class="details">
+          <img src="" alt="" class="details__img" />
+          <div class="details__text">
+            <p class="details__name"></p>
+            <span class="details__number"></span>
+          </div>
+        </div>
+        <span
+          class="fas fa-caret-left prev"
+          onclick="onChangeDetailsPort(-1)"
+        ></span>
+        <span
+          class="fas fa-caret-right next"
+          onclick="onChangeDetailsPort(1)"
+        ></span>
+      </div>
+    </div>
+
+    <div class="container-xl" id="blog">
+      <h2>Latest News</h2>
+
+      <div class="blog__slider">
+        <div class="slider-content">
+          <div class="slider__item">
+            <img src="images/blog3.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Fashion trending in 2020</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/blog4.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Technology trends in recent years</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/blog6.jpg" alt="" />
+            <div class="slider__text">
+              <h5>
+                <a href="">Prevent 75% of visitors from google analytics</a>
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/my-pham.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Types of cosmetics for men's developer</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/blog3.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Fashion trending in 2020</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/blog4.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Technology trends in recent years</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/blog6.jpg" alt="" />
+            <div class="slider__text">
+              <h5>
+                <a href="">Prevent 75% of visitors from google analytics</a>
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/my-pham.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Types of cosmetics for men's developer</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/blog3.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Fashion trending in 2020</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="images/blog4.jpg" alt="" />
+            <div class="slider__text">
+              <h5><a href="">Technology trends in recent years</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit eligendi praesentium ipsam doloremque porro laboriosam
+                fuga, itaque assumenda consectetur repellendus voluptates, enim
+                minus, exercitationem similique officia provident. Voluptate,
+                quae cupiditate?
+              </p>
+              <a href=""
+                ><span>Read More</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="date">
+              <span>09</span><br />
+              <label>July</label>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          class="slider-prev"
+          onclick="sliderMove(false)"
+          ><i class="fas fa-angle-left"></i
+        ></a>
+        <a
+          href="javascript:void(0);"
+          class="slider-next"
+          onclick="sliderMove(true)"
+          ><i class="fas fa-angle-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="container-xl" id="contact">
+      <h2>Contact Me</h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1100.802561163315!2d105.77401750581244!3d21.029175334743314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b1a777a9b1%3A0x2393819288865eeb!2zTmfDtSA1MiDEkMaw4budbmcgTeG7uSDEkMOsbmgsIE3hu7kgxJDDrG5oIDIsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1592403850731!5m2!1svi!2s"
+          width="900"
+          height="350"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+
+      <div class="get-in-touch">
+        <h3>Get In Touch</h3>
+        <p>
+          If you got any question please do not hesitate to send to us message
+        </p>
+        <form action="index.html">
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name *"
+                required
+              />
+            </div>
+            <div class="col-md-6 form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email *"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Subject *"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              id="mess"
+              cols="30"
+              rows="4"
+              class="form-control"
+              placeholder="Message *"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn btn-success d-block mx-auto" type="submit">
+            Send Message
+          </button>
+        </form>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="contact__card">
+              <i class="fas fa-location-arrow"></i>
+              <h4>Address</h4>
+              <address>
+                52 My Dinh Street
+                <br />
+                My Dinh 2, HN.
+              </address>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="contact__card">
+              <i class="far fa-envelope"></i>
+              <h4>Email</h4>
+              <address>
+                duongbich.dev94@gmail.com
+                <br />
+                bich.letitgo@gmail.com
+              </address>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto">
+            <div class="contact__card">
+              <i class="fas fa-phone"></i>
+              <h4>Phone</h4>
+              <address>
+                0364 915 522
+                <br />
+                0364 915 522
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container footer">
+        <div class="footer__link">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer__text">
+          &copy; DN Bich 2020 | All Right Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>

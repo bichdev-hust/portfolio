@@ -1,0 +1,109 @@
+$red: rgb(235, 83, 83);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dae7f8;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: $red;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h3 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h4 {
+  margin: 30px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// #change-color {
+//   position: fixed;
+//   top: 20%;
+//   right: 15px;
+
+//   span {
+//     font-size: 25px;
+//     color: red;
+//     animation-name: anim-cog;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+//   }
+
+//   .color {
+//     // position:  absolute;
+
+//     div {
+//       border-radius: 50%;
+//     }
+//   }
+// }
+
+footer {
+  background-color: #000;
+
+  .footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__link a {
+      color: #fff;
+      padding: 0 10px;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    .footer__text {
+      color: #fff;
+    }
+  }
+}
+
+// @keyframes anim-cog {
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+@import "navbar-custom";
+@import "home";
+@import "about";
+@import "portfolio";
+@import "contact";
+@import "slider";
+@import "responsive";

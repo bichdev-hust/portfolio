@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+  #portfolio {
+    .portfolioContainer {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+
+  .img-personal {
+    margin-left: 33px;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      width: 50vw;
+      height: 50vw;
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.4), 0 0 0 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .overlay-img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #home .container-xl h1 {
+    font-size: 60px;
+  }
+
+  #portfolio {
+    .portfolioContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+}

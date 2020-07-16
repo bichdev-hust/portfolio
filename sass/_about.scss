@@ -1,0 +1,104 @@
+#about {
+  // padding-bottom: 30px;
+  .img-personal {
+    position: relative;
+    margin-bottom: 50px;
+
+    .overlay-img {
+      position: absolute;
+      top: 25px;
+      left: 30px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      // transform: translate(10px, 10px);
+      border: 10px solid red;
+    }
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  .about-me-skills span {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid red;
+    border-radius: 4px;
+    margin: 5px;
+  }
+
+  .about-me-short-wrap {
+    margin-top: 20px;
+
+    li {
+      width: 50%;
+      float: left;
+
+      i {
+        color: red;
+      }
+
+      label {
+        font-weight: 600;
+        width: 100px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  hr {
+    margin-bottom: 40px;
+  }
+
+  .detail-skills {
+    .skills-text {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 5px;
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+
+    .progress {
+      height: 10px;
+    }
+  }
+
+  .about-btn {
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    a {
+      position: relative;
+      border: 1px solid red;
+      color: red;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background-color: transparent;
+        width: 0;
+        height: 100%;
+        transition: all 0.4s;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &::before {
+          width: 100%;
+          background-color: red;
+        }
+      }
+    }
+  }
+}
